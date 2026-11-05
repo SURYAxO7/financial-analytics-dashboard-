@@ -1,0 +1,470 @@
+date,department,type,category,amount
+2024-01-01,Sales,Revenue,Product Sales,187529.05
+2024-01-01,Sales,Expense,Marketing Spend,14889.42
+2024-01-01,Sales,Expense,Marketing Spend,19970.53
+2024-01-01,Sales,Expense,Salaries,17961.29
+2024-01-01,Marketing,Revenue,Service Revenue,17178.78
+2024-01-01,Marketing,Expense,Software & Tools,12172.24
+2024-01-01,Marketing,Expense,Raw Materials,19403.13
+2024-01-01,Operations,Revenue,Licensing,54967.93
+2024-01-01,Operations,Expense,Raw Materials,29528.8
+2024-01-01,Operations,Expense,Office Rent,36354.1
+2024-01-01,R&D,Revenue,Licensing,4572.97
+2024-01-01,R&D,Expense,Utilities,13481.56
+2024-01-01,R&D,Expense,Salaries,19442.19
+2024-01-01,HR,Expense,Raw Materials,8784.33
+2024-01-01,HR,Expense,Travel,5560.82
+2024-01-01,HR,Expense,Utilities,8843.87
+2024-01-01,IT,Revenue,Product Sales,8185.65
+2024-01-01,IT,Expense,Marketing Spend,14885.04
+2024-01-01,IT,Expense,Marketing Spend,13652.45
+2024-02-01,Sales,Revenue,Subscriptions,175609.14
+2024-02-01,Sales,Expense,Travel,16299.94
+2024-02-01,Sales,Expense,Marketing Spend,19239.51
+2024-02-01,Sales,Expense,Office Rent,17079.6
+2024-02-01,Marketing,Revenue,Service Revenue,20447.3
+2024-02-01,Marketing,Expense,Software & Tools,13679.09
+2024-02-01,Marketing,Expense,Salaries,17666.65
+2024-02-01,Operations,Revenue,Product Sales,55784.34
+2024-02-01,Operations,Expense,Utilities,17763.64
+2024-02-01,Operations,Expense,Logistics,20673.05
+2024-02-01,Operations,Expense,Logistics,24955.81
+2024-02-01,R&D,Revenue,Service Revenue,4517.88
+2024-02-01,R&D,Expense,Raw Materials,18867.4
+2024-02-01,R&D,Expense,Raw Materials,21198.27
+2024-02-01,HR,Expense,Logistics,8398.78
+2024-02-01,HR,Expense,Salaries,5275.54
+2024-02-01,HR,Expense,Office Rent,8400.05
+2024-02-01,IT,Revenue,Subscriptions,8405.54
+2024-02-01,IT,Expense,Logistics,13345.77
+2024-02-01,IT,Expense,Salaries,12503.77
+2024-03-01,Sales,Revenue,Product Sales,194288.95
+2024-03-01,Sales,Expense,Travel,18517.18
+2024-03-01,Sales,Expense,Logistics,19881.47
+2024-03-01,Sales,Expense,Travel,16784.67
+2024-03-01,Marketing,Revenue,Service Revenue,23379.28
+2024-03-01,Marketing,Expense,Software & Tools,15168.11
+2024-03-01,Marketing,Expense,Office Rent,15352.63
+2024-03-01,Operations,Revenue,Product Sales,62165.83
+2024-03-01,Operations,Expense,Utilities,18699.41
+2024-03-01,Operations,Expense,Travel,27468.14
+2024-03-01,Operations,Expense,Software & Tools,18131.29
+2024-03-01,R&D,Revenue,Product Sales,5700.62
+2024-03-01,R&D,Expense,Office Rent,21121.48
+2024-03-01,R&D,Expense,Logistics,13945.93
+2024-03-01,HR,Expense,Raw Materials,12333.91
+2024-03-01,HR,Expense,Software & Tools,10832.41
+2024-03-01,IT,Revenue,Subscriptions,8715.34
+2024-03-01,IT,Expense,Marketing Spend,8826.42
+2024-03-01,IT,Expense,Marketing Spend,7853.27
+2024-03-01,IT,Expense,Software & Tools,8992.0
+2024-04-01,Sales,Revenue,Product Sales,191427.69
+2024-04-01,Sales,Expense,Marketing Spend,24438.24
+2024-04-01,Sales,Expense,Utilities,40571.65
+2024-04-01,Marketing,Revenue,Service Revenue,18052.45
+2024-04-01,Marketing,Expense,Office Rent,9485.9
+2024-04-01,Marketing,Expense,Logistics,12333.77
+2024-04-01,Marketing,Expense,Logistics,9250.74
+2024-04-01,Operations,Revenue,Service Revenue,67894.2
+2024-04-01,Operations,Expense,Raw Materials,30101.99
+2024-04-01,Operations,Expense,Salaries,30678.36
+2024-04-01,R&D,Revenue,Product Sales,5449.41
+2024-04-01,R&D,Expense,Marketing Spend,16634.22
+2024-04-01,R&D,Expense,Software & Tools,17017.46
+2024-04-01,HR,Expense,Logistics,6157.96
+2024-04-01,HR,Expense,Marketing Spend,6746.65
+2024-04-01,HR,Expense,Marketing Spend,8059.59
+2024-04-01,IT,Revenue,Product Sales,7170.58
+2024-04-01,IT,Expense,Office Rent,16655.14
+2024-04-01,IT,Expense,Logistics,12106.94
+2024-05-01,Sales,Revenue,Subscriptions,172440.39
+2024-05-01,Sales,Expense,Raw Materials,21532.76
+2024-05-01,Sales,Expense,Logistics,29213.12
+2024-05-01,Marketing,Revenue,Subscriptions,19609.65
+2024-05-01,Marketing,Expense,Salaries,13080.03
+2024-05-01,Marketing,Expense,Salaries,16929.79
+2024-05-01,Operations,Revenue,Product Sales,67557.81
+2024-05-01,Operations,Expense,Office Rent,34672.91
+2024-05-01,Operations,Expense,Marketing Spend,28462.22
+2024-05-01,R&D,Revenue,Product Sales,5792.31
+2024-05-01,R&D,Expense,Marketing Spend,16972.06
+2024-05-01,R&D,Expense,Software & Tools,24701.52
+2024-05-01,HR,Expense,Utilities,11421.88
+2024-05-01,HR,Expense,Software & Tools,14303.3
+2024-05-01,IT,Revenue,Licensing,8810.89
+2024-05-01,IT,Expense,Travel,11068.08
+2024-05-01,IT,Expense,Marketing Spend,14647.63
+2024-06-01,Sales,Revenue,Product Sales,204254.06
+2024-06-01,Sales,Expense,Office Rent,29438.54
+2024-06-01,Sales,Expense,Marketing Spend,34378.13
+2024-06-01,Marketing,Revenue,Licensing,21988.99
+2024-06-01,Marketing,Expense,Travel,11192.64
+2024-06-01,Marketing,Expense,Salaries,9626.97
+2024-06-01,Marketing,Expense,Travel,9394.78
+2024-06-01,Operations,Revenue,Product Sales,66899.56
+2024-06-01,Operations,Expense,Office Rent,37944.44
+2024-06-01,Operations,Expense,Software & Tools,25186.62
+2024-06-01,R&D,Revenue,Service Revenue,5257.88
+2024-06-01,R&D,Expense,Salaries,11147.59
+2024-06-01,R&D,Expense,Raw Materials,10876.83
+2024-06-01,R&D,Expense,Salaries,17107.05
+2024-06-01,HR,Expense,Travel,9607.32
+2024-06-01,HR,Expense,Logistics,11185.22
+2024-06-01,IT,Revenue,Subscriptions,8019.5
+2024-06-01,IT,Expense,Office Rent,14973.02
+2024-06-01,IT,Expense,Utilities,10638.15
+2024-07-01,Sales,Revenue,Service Revenue,197736.31
+2024-07-01,Sales,Expense,Salaries,16793.91
+2024-07-01,Sales,Expense,Software & Tools,21900.17
+2024-07-01,Sales,Expense,Marketing Spend,17028.72
+2024-07-01,Marketing,Revenue,Subscriptions,20498.86
+2024-07-01,Marketing,Expense,Office Rent,15611.76
+2024-07-01,Marketing,Expense,Office Rent,22960.54
+2024-07-01,Operations,Revenue,Product Sales,71679.81
+2024-07-01,Operations,Expense,Raw Materials,34039.07
+2024-07-01,Operations,Expense,Software & Tools,43645.03
+2024-07-01,R&D,Revenue,Product Sales,4985.02
+2024-07-01,R&D,Expense,Software & Tools,15365.03
+2024-07-01,R&D,Expense,Logistics,10974.86
+2024-07-01,R&D,Expense,Software & Tools,13132.57
+2024-07-01,HR,Expense,Utilities,9359.06
+2024-07-01,HR,Expense,Marketing Spend,10917.39
+2024-07-01,IT,Revenue,Licensing,9777.21
+2024-07-01,IT,Expense,Utilities,9170.19
+2024-07-01,IT,Expense,Marketing Spend,11457.43
+2024-07-01,IT,Expense,Travel,9244.56
+2024-08-01,Sales,Revenue,Licensing,176304.65
+2024-08-01,Sales,Expense,Utilities,26756.14
+2024-08-01,Sales,Expense,Marketing Spend,27477.12
+2024-08-01,Marketing,Revenue,Service Revenue,20933.31
+2024-08-01,Marketing,Expense,Software & Tools,9600.24
+2024-08-01,Marketing,Expense,Marketing Spend,9436.29
+2024-08-01,Marketing,Expense,Utilities,12409.05
+2024-08-01,Operations,Revenue,Product Sales,67443.01
+2024-08-01,Operations,Expense,Utilities,25090.26
+2024-08-01,Operations,Expense,Travel,21847.48
+2024-08-01,Operations,Expense,Software & Tools,24136.78
+2024-08-01,R&D,Revenue,Subscriptions,5290.65
+2024-08-01,R&D,Expense,Salaries,17862.98
+2024-08-01,R&D,Expense,Software & Tools,19309.74
+2024-08-01,HR,Expense,Utilities,8762.19
+2024-08-01,HR,Expense,Logistics,8109.2
+2024-08-01,HR,Expense,Logistics,8925.43
+2024-08-01,IT,Revenue,Service Revenue,9436.18
+2024-08-01,IT,Expense,Utilities,14366.3
+2024-08-01,IT,Expense,Software & Tools,10549.79
+2024-09-01,Sales,Revenue,Service Revenue,207506.74
+2024-09-01,Sales,Expense,Logistics,22929.26
+2024-09-01,Sales,Expense,Marketing Spend,34572.47
+2024-09-01,Marketing,Revenue,Service Revenue,21626.82
+2024-09-01,Marketing,Expense,Salaries,9826.56
+2024-09-01,Marketing,Expense,Marketing Spend,13315.76
+2024-09-01,Marketing,Expense,Software & Tools,10781.05
+2024-09-01,Operations,Revenue,Subscriptions,59365.89
+2024-09-01,Operations,Expense,Marketing Spend,42045.36
+2024-09-01,Operations,Expense,Logistics,29489.88
+2024-09-01,R&D,Revenue,Licensing,5755.5
+2024-09-01,R&D,Expense,Raw Materials,14221.54
+2024-09-01,R&D,Expense,Logistics,14154.39
+2024-09-01,R&D,Expense,Logistics,12571.96
+2024-09-01,HR,Expense,Travel,6876.77
+2024-09-01,HR,Expense,Logistics,8891.51
+2024-09-01,HR,Expense,Travel,7546.59
+2024-09-01,IT,Revenue,Licensing,8609.84
+2024-09-01,IT,Expense,Marketing Spend,12616.88
+2024-09-01,IT,Expense,Software & Tools,12469.35
+2024-10-01,Sales,Revenue,Service Revenue,192441.77
+2024-10-01,Sales,Expense,Logistics,26786.38
+2024-10-01,Sales,Expense,Software & Tools,27870.73
+2024-10-01,Marketing,Revenue,Subscriptions,24373.06
+2024-10-01,Marketing,Expense,Raw Materials,19697.42
+2024-10-01,Marketing,Expense,Utilities,15767.6
+2024-10-01,Operations,Revenue,Subscriptions,62463.53
+2024-10-01,Operations,Expense,Software & Tools,26460.51
+2024-10-01,Operations,Expense,Travel,22946.46
+2024-10-01,Operations,Expense,Salaries,22569.05
+2024-10-01,R&D,Revenue,Subscriptions,5355.28
+2024-10-01,R&D,Expense,Salaries,24186.04
+2024-10-01,R&D,Expense,Salaries,20040.28
+2024-10-01,HR,Expense,Logistics,10709.22
+2024-10-01,HR,Expense,Travel,12534.22
+2024-10-01,IT,Revenue,Service Revenue,8542.51
+2024-10-01,IT,Expense,Raw Materials,10238.77
+2024-10-01,IT,Expense,Raw Materials,8006.52
+2024-10-01,IT,Expense,Marketing Spend,8617.25
+2024-11-01,Sales,Revenue,Licensing,204577.15
+2024-11-01,Sales,Expense,Salaries,35293.72
+2024-11-01,Sales,Expense,Software & Tools,31019.34
+2024-11-01,Marketing,Revenue,Product Sales,20438.96
+2024-11-01,Marketing,Expense,Marketing Spend,15753.13
+2024-11-01,Marketing,Expense,Software & Tools,16501.6
+2024-11-01,Operations,Revenue,Licensing,66688.42
+2024-11-01,Operations,Expense,Marketing Spend,23626.18
+2024-11-01,Operations,Expense,Office Rent,24631.7
+2024-11-01,Operations,Expense,Marketing Spend,23368.08
+2024-11-01,R&D,Revenue,Licensing,5748.86
+2024-11-01,R&D,Expense,Marketing Spend,13897.17
+2024-11-01,R&D,Expense,Software & Tools,12697.44
+2024-11-01,R&D,Expense,Travel,9916.91
+2024-11-01,HR,Expense,Salaries,13394.07
+2024-11-01,HR,Expense,Raw Materials,11929.18
+2024-11-01,IT,Revenue,Product Sales,9421.48
+2024-11-01,IT,Expense,Logistics,8480.43
+2024-11-01,IT,Expense,Utilities,7496.25
+2024-11-01,IT,Expense,Logistics,10863.89
+2024-12-01,Sales,Revenue,Licensing,203807.65
+2024-12-01,Sales,Expense,Travel,23292.57
+2024-12-01,Sales,Expense,Software & Tools,17895.7
+2024-12-01,Sales,Expense,Marketing Spend,23364.1
+2024-12-01,Marketing,Revenue,Subscriptions,19757.65
+2024-12-01,Marketing,Expense,Raw Materials,18328.8
+2024-12-01,Marketing,Expense,Logistics,16198.18
+2024-12-01,Operations,Revenue,Service Revenue,70167.15
+2024-12-01,Operations,Expense,Utilities,25868.22
+2024-12-01,Operations,Expense,Travel,19821.78
+2024-12-01,Operations,Expense,Software & Tools,24181.42
+2024-12-01,R&D,Revenue,Subscriptions,4632.61
+2024-12-01,R&D,Expense,Logistics,11965.49
+2024-12-01,R&D,Expense,Logistics,14865.6
+2024-12-01,R&D,Expense,Salaries,12951.95
+2024-12-01,HR,Expense,Software & Tools,11483.0
+2024-12-01,HR,Expense,Utilities,11435.21
+2024-12-01,IT,Revenue,Licensing,8396.53
+2024-12-01,IT,Expense,Utilities,11002.5
+2024-12-01,IT,Expense,Travel,11542.74
+2024-12-01,IT,Expense,Software & Tools,9051.31
+2025-01-01,Sales,Revenue,Service Revenue,182485.64
+2025-01-01,Sales,Expense,Office Rent,19655.47
+2025-01-01,Sales,Expense,Logistics,16864.79
+2025-01-01,Sales,Expense,Travel,19680.08
+2025-01-01,Marketing,Revenue,Service Revenue,26178.22
+2025-01-01,Marketing,Expense,Salaries,9429.56
+2025-01-01,Marketing,Expense,Office Rent,12467.65
+2025-01-01,Marketing,Expense,Salaries,9599.63
+2025-01-01,Operations,Revenue,Service Revenue,69738.77
+2025-01-01,Operations,Expense,Travel,18365.19
+2025-01-01,Operations,Expense,Logistics,24735.7
+2025-01-01,Operations,Expense,Salaries,23733.63
+2025-01-01,R&D,Revenue,Subscriptions,5295.25
+2025-01-01,R&D,Expense,Marketing Spend,20463.39
+2025-01-01,R&D,Expense,Salaries,22838.71
+2025-01-01,HR,Expense,Travel,11995.22
+2025-01-01,HR,Expense,Software & Tools,9514.25
+2025-01-01,IT,Revenue,Subscriptions,8104.42
+2025-01-01,IT,Expense,Logistics,14941.18
+2025-01-01,IT,Expense,Raw Materials,15110.03
+2025-02-01,Sales,Revenue,Product Sales,195931.06
+2025-02-01,Sales,Expense,Software & Tools,30587.38
+2025-02-01,Sales,Expense,Marketing Spend,35042.39
+2025-02-01,Marketing,Revenue,Service Revenue,20741.35
+2025-02-01,Marketing,Expense,Logistics,15557.92
+2025-02-01,Marketing,Expense,Software & Tools,15342.08
+2025-02-01,Operations,Revenue,Licensing,64950.89
+2025-02-01,Operations,Expense,Travel,20456.88
+2025-02-01,Operations,Expense,Software & Tools,26896.3
+2025-02-01,Operations,Expense,Software & Tools,20703.42
+2025-02-01,R&D,Revenue,Licensing,6036.0
+2025-02-01,R&D,Expense,Travel,16024.3
+2025-02-01,R&D,Expense,Travel,21764.68
+2025-02-01,HR,Expense,Raw Materials,8432.16
+2025-02-01,HR,Expense,Logistics,8880.5
+2025-02-01,HR,Expense,Salaries,6054.08
+2025-02-01,IT,Revenue,Licensing,10328.41
+2025-02-01,IT,Expense,Salaries,8085.31
+2025-02-01,IT,Expense,Travel,11470.71
+2025-02-01,IT,Expense,Office Rent,7883.17
+2025-03-01,Sales,Revenue,Subscriptions,208379.43
+2025-03-01,Sales,Expense,Logistics,20733.58
+2025-03-01,Sales,Expense,Logistics,23404.58
+2025-03-01,Sales,Expense,Utilities,15035.98
+2025-03-01,Marketing,Revenue,Product Sales,22105.98
+2025-03-01,Marketing,Expense,Travel,18234.7
+2025-03-01,Marketing,Expense,Raw Materials,16627.9
+2025-03-01,Operations,Revenue,Product Sales,76672.41
+2025-03-01,Operations,Expense,Marketing Spend,20921.81
+2025-03-01,Operations,Expense,Raw Materials,28955.32
+2025-03-01,Operations,Expense,Salaries,22676.31
+2025-03-01,R&D,Revenue,Subscriptions,6116.22
+2025-03-01,R&D,Expense,Logistics,12503.27
+2025-03-01,R&D,Expense,Salaries,12986.27
+2025-03-01,R&D,Expense,Office Rent,10352.87
+2025-03-01,HR,Expense,Marketing Spend,9130.15
+2025-03-01,HR,Expense,Software & Tools,6592.94
+2025-03-01,HR,Expense,Travel,10465.05
+2025-03-01,IT,Revenue,Subscriptions,9486.51
+2025-03-01,IT,Expense,Marketing Spend,16307.36
+2025-03-01,IT,Expense,Marketing Spend,12197.54
+2025-04-01,Sales,Revenue,Service Revenue,221812.06
+2025-04-01,Sales,Expense,Travel,21548.34
+2025-04-01,Sales,Expense,Logistics,23656.1
+2025-04-01,Sales,Expense,Software & Tools,30173.66
+2025-04-01,Marketing,Revenue,Service Revenue,23294.05
+2025-04-01,Marketing,Expense,Office Rent,11509.88
+2025-04-01,Marketing,Expense,Travel,12429.67
+2025-04-01,Marketing,Expense,Raw Materials,10281.05
+2025-04-01,Operations,Revenue,Licensing,67398.95
+2025-04-01,Operations,Expense,Logistics,33728.43
+2025-04-01,Operations,Expense,Logistics,45431.94
+2025-04-01,R&D,Revenue,Licensing,5968.29
+2025-04-01,R&D,Expense,Logistics,14151.25
+2025-04-01,R&D,Expense,Software & Tools,16176.2
+2025-04-01,R&D,Expense,Software & Tools,13593.99
+2025-04-01,HR,Expense,Salaries,9095.15
+2025-04-01,HR,Expense,Logistics,7177.77
+2025-04-01,HR,Expense,Raw Materials,8985.4
+2025-04-01,IT,Revenue,Service Revenue,9117.38
+2025-04-01,IT,Expense,Utilities,9506.35
+2025-04-01,IT,Expense,Logistics,13789.38
+2025-04-01,IT,Expense,Logistics,8597.42
+2025-05-01,Sales,Revenue,Service Revenue,183363.89
+2025-05-01,Sales,Expense,Marketing Spend,27887.37
+2025-05-01,Sales,Expense,Travel,21008.6
+2025-05-01,Sales,Expense,Raw Materials,20137.54
+2025-05-01,Marketing,Revenue,Licensing,24911.63
+2025-05-01,Marketing,Expense,Logistics,13662.16
+2025-05-01,Marketing,Expense,Salaries,14560.6
+2025-05-01,Marketing,Expense,Software & Tools,11291.98
+2025-05-01,Operations,Revenue,Licensing,74334.19
+2025-05-01,Operations,Expense,Marketing Spend,39578.27
+2025-05-01,Operations,Expense,Marketing Spend,46071.26
+2025-05-01,R&D,Revenue,Licensing,5859.3
+2025-05-01,R&D,Expense,Travel,21212.52
+2025-05-01,R&D,Expense,Raw Materials,15772.68
+2025-05-01,HR,Expense,Office Rent,12003.51
+2025-05-01,HR,Expense,Marketing Spend,11178.76
+2025-05-01,IT,Revenue,Subscriptions,9849.23
+2025-05-01,IT,Expense,Software & Tools,16003.97
+2025-05-01,IT,Expense,Travel,14740.88
+2025-06-01,Sales,Revenue,Subscriptions,191901.52
+2025-06-01,Sales,Expense,Logistics,19730.31
+2025-06-01,Sales,Expense,Travel,28770.22
+2025-06-01,Sales,Expense,Raw Materials,21187.25
+2025-06-01,Marketing,Revenue,Subscriptions,26429.72
+2025-06-01,Marketing,Expense,Logistics,10793.8
+2025-06-01,Marketing,Expense,Raw Materials,9755.21
+2025-06-01,Marketing,Expense,Travel,13783.59
+2025-06-01,Operations,Revenue,Licensing,86093.28
+2025-06-01,Operations,Expense,Travel,45583.74
+2025-06-01,Operations,Expense,Salaries,32255.71
+2025-06-01,R&D,Revenue,Subscriptions,7020.54
+2025-06-01,R&D,Expense,Utilities,13221.31
+2025-06-01,R&D,Expense,Software & Tools,13865.51
+2025-06-01,R&D,Expense,Office Rent,18217.42
+2025-06-01,HR,Expense,Travel,15150.34
+2025-06-01,HR,Expense,Salaries,15030.31
+2025-06-01,IT,Revenue,Service Revenue,10239.64
+2025-06-01,IT,Expense,Raw Materials,15760.54
+2025-06-01,IT,Expense,Office Rent,15758.65
+2025-07-01,Sales,Revenue,Licensing,237693.58
+2025-07-01,Sales,Expense,Logistics,21456.38
+2025-07-01,Sales,Expense,Travel,29581.27
+2025-07-01,Sales,Expense,Utilities,22261.14
+2025-07-01,Marketing,Revenue,Subscriptions,26539.68
+2025-07-01,Marketing,Expense,Raw Materials,20088.52
+2025-07-01,Marketing,Expense,Utilities,16344.25
+2025-07-01,Operations,Revenue,Subscriptions,63992.55
+2025-07-01,Operations,Expense,Utilities,31988.28
+2025-07-01,Operations,Expense,Travel,46323.62
+2025-07-01,R&D,Revenue,Licensing,6234.24
+2025-07-01,R&D,Expense,Utilities,21772.83
+2025-07-01,R&D,Expense,Software & Tools,25975.37
+2025-07-01,HR,Expense,Travel,13541.87
+2025-07-01,HR,Expense,Marketing Spend,14766.43
+2025-07-01,IT,Revenue,Product Sales,8676.73
+2025-07-01,IT,Expense,Software & Tools,9805.21
+2025-07-01,IT,Expense,Office Rent,14405.48
+2025-07-01,IT,Expense,Utilities,10071.64
+2025-08-01,Sales,Revenue,Subscriptions,232345.28
+2025-08-01,Sales,Expense,Logistics,38627.08
+2025-08-01,Sales,Expense,Travel,35697.47
+2025-08-01,Marketing,Revenue,Licensing,21117.05
+2025-08-01,Marketing,Expense,Utilities,21493.52
+2025-08-01,Marketing,Expense,Utilities,12536.78
+2025-08-01,Operations,Revenue,Licensing,74662.87
+2025-08-01,Operations,Expense,Marketing Spend,34245.93
+2025-08-01,Operations,Expense,Logistics,51841.22
+2025-08-01,R&D,Revenue,Service Revenue,5387.86
+2025-08-01,R&D,Expense,Office Rent,18255.87
+2025-08-01,R&D,Expense,Software & Tools,23255.55
+2025-08-01,HR,Expense,Software & Tools,14711.25
+2025-08-01,HR,Expense,Software & Tools,15850.79
+2025-08-01,IT,Revenue,Service Revenue,9318.73
+2025-08-01,IT,Expense,Office Rent,18206.01
+2025-08-01,IT,Expense,Office Rent,12497.61
+2025-09-01,Sales,Revenue,Product Sales,197080.67
+2025-09-01,Sales,Expense,Software & Tools,34362.95
+2025-09-01,Sales,Expense,Salaries,28187.17
+2025-09-01,Marketing,Revenue,Product Sales,22376.39
+2025-09-01,Marketing,Expense,Marketing Spend,19702.65
+2025-09-01,Marketing,Expense,Utilities,19112.39
+2025-09-01,Operations,Revenue,Product Sales,74695.47
+2025-09-01,Operations,Expense,Salaries,31677.7
+2025-09-01,Operations,Expense,Travel,26718.35
+2025-09-01,Operations,Expense,Salaries,21892.14
+2025-09-01,R&D,Revenue,Subscriptions,5383.14
+2025-09-01,R&D,Expense,Logistics,12018.21
+2025-09-01,R&D,Expense,Marketing Spend,12748.59
+2025-09-01,R&D,Expense,Office Rent,16712.94
+2025-09-01,HR,Expense,Utilities,13247.82
+2025-09-01,HR,Expense,Travel,11421.37
+2025-09-01,IT,Revenue,Subscriptions,9782.26
+2025-09-01,IT,Expense,Software & Tools,14432.94
+2025-09-01,IT,Expense,Software & Tools,19145.98
+2025-10-01,Sales,Revenue,Subscriptions,219533.11
+2025-10-01,Sales,Expense,Raw Materials,18912.48
+2025-10-01,Sales,Expense,Travel,22565.85
+2025-10-01,Sales,Expense,Office Rent,24906.11
+2025-10-01,Marketing,Revenue,Subscriptions,26443.4
+2025-10-01,Marketing,Expense,Raw Materials,14384.54
+2025-10-01,Marketing,Expense,Utilities,16860.35
+2025-10-01,Operations,Revenue,Product Sales,82146.03
+2025-10-01,Operations,Expense,Raw Materials,27048.35
+2025-10-01,Operations,Expense,Salaries,32752.92
+2025-10-01,Operations,Expense,Travel,28907.29
+2025-10-01,R&D,Revenue,Service Revenue,5981.39
+2025-10-01,R&D,Expense,Marketing Spend,20104.34
+2025-10-01,R&D,Expense,Utilities,23585.08
+2025-10-01,HR,Expense,Raw Materials,14924.96
+2025-10-01,HR,Expense,Salaries,16007.62
+2025-10-01,IT,Revenue,Licensing,10343.51
+2025-10-01,IT,Expense,Travel,16470.99
+2025-10-01,IT,Expense,Utilities,16361.07
+2025-11-01,Sales,Revenue,Subscriptions,197641.35
+2025-11-01,Sales,Expense,Salaries,33989.31
+2025-11-01,Sales,Expense,Software & Tools,25562.38
+2025-11-01,Marketing,Revenue,Subscriptions,23678.72
+2025-11-01,Marketing,Expense,Utilities,10886.82
+2025-11-01,Marketing,Expense,Marketing Spend,13570.38
+2025-11-01,Marketing,Expense,Office Rent,12530.53
+2025-11-01,Operations,Revenue,Product Sales,66193.82
+2025-11-01,Operations,Expense,Logistics,41747.29
+2025-11-01,Operations,Expense,Raw Materials,38238.41
+2025-11-01,R&D,Revenue,Product Sales,5729.65
+2025-11-01,R&D,Expense,Logistics,13279.32
+2025-11-01,R&D,Expense,Travel,15333.72
+2025-11-01,R&D,Expense,Raw Materials,12278.1
+2025-11-01,HR,Expense,Software & Tools,11539.29
+2025-11-01,HR,Expense,Travel,14977.63
+2025-11-01,IT,Revenue,Product Sales,9215.49
+2025-11-01,IT,Expense,Office Rent,15967.85
+2025-11-01,IT,Expense,Software & Tools,16070.17
+2025-12-01,Sales,Revenue,Product Sales,257359.65
+2025-12-01,Sales,Expense,Utilities,24703.32
+2025-12-01,Sales,Expense,Raw Materials,19947.57
+2025-12-01,Sales,Expense,Raw Materials,20347.43
+2025-12-01,Marketing,Revenue,Subscriptions,24167.01
+2025-12-01,Marketing,Expense,Logistics,18178.24
+2025-12-01,Marketing,Expense,Utilities,26814.74
+2025-12-01,Operations,Revenue,Product Sales,67825.61
+2025-12-01,Operations,Expense,Marketing Spend,39306.41
+2025-12-01,Operations,Expense,Travel,40791.85
+2025-12-01,R&D,Revenue,Service Revenue,6924.53
+2025-12-01,R&D,Expense,Marketing Spend,13054.36
+2025-12-01,R&D,Expense,Software & Tools,17258.08
+2025-12-01,R&D,Expense,Utilities,19575.04
+2025-12-01,HR,Expense,Office Rent,11030.96
+2025-12-01,HR,Expense,Office Rent,8192.63
+2025-12-01,HR,Expense,Office Rent,9136.68
+2025-12-01,IT,Revenue,Product Sales,10635.34
+2025-12-01,IT,Expense,Logistics,19010.8
+2025-12-01,IT,Expense,Logistics,18906.09

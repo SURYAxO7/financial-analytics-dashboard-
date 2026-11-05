@@ -1,0 +1,11 @@
+
+KEY INSIGHTS — Financial Analytics Dashboard
+=============================================
+- Total Revenue (24 months): ₹7,365,086
+- Total Expense (24 months): ₹6,337,730
+- Overall Net Profit: ₹1,027,356
+- Average Profit Margin: 13.9%
+- Highest expense category: Logistics (15.2% of total expenses)
+- Departments over budget in 2025-12: HR, IT, Marketing, Operations, R&D
+- Revenue growth trend: Positive over the period
+  (272,434 -> 366,912)

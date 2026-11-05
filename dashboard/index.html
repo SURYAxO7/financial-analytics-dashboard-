@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Financial Analytics Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  :root{
+    --bg: #0b1116;
+    --panel: #121a22;
+    --panel-border: #1f2b35;
+    --ink: #e7edf1;
+    --muted: #7c8fa0;
+    --teal: #2dd4a7;
+    --coral: #ff6b5e;
+    --gold: #e0b04c;
+    --blue: #4f9dde;
+    --mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background: radial-gradient(1200px 600px at 10% -10%, #142029 0%, var(--bg) 55%);
+    color: var(--ink);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    padding: 28px 32px 60px;
+  }
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    border-bottom: 1px solid var(--panel-border);
+    padding-bottom: 18px;
+    margin-bottom: 22px;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .eyebrow{
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin: 0 0 6px;
+  }
+  h1{margin:0; font-size: 26px; font-weight: 650; letter-spacing:-0.01em;}
+  .subtitle{color:var(--muted); font-size:13px; margin-top:4px;}
+  .period{
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    text-align:right;
+  }
+  .kpi-row{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 14px;
+    margin-bottom: 22px;
+  }
+  .kpi{
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    position: relative;
+    overflow:hidden;
+  }
+  .kpi::before{
+    content:"";
+    position:absolute; top:0; left:0; width:3px; height:100%;
+    background: var(--accent, var(--teal));
+  }
+  .kpi-label{font-size:11px; text-transform:uppercase; letter-spacing:0.08em; color:var(--muted); margin-bottom:8px;}
+  .kpi-value{font-family:var(--mono); font-size:22px; font-weight:600;}
+  .kpi-sub{font-size:12px; color:var(--muted); margin-top:6px;}
+  .up{color:var(--teal);} .down{color:var(--coral);}
+  .grid{
+    display:grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 16px;
+    margin-bottom:16px;
+  }
+  .grid3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:16px;
+    margin-bottom:16px;
+  }
+  .panel{
+    background: var(--panel);
+    border: 1px solid var(--panel-border);
+    border-radius: 10px;
+    padding: 18px 20px 10px;
+  }
+  .panel h2{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    color: var(--muted);
+    margin: 0 0 14px;
+    font-weight:600;
+  }
+  .panel h2 span{color:var(--ink);}
+  canvas{max-height: 280px;}
+  .insight-box{
+    background: linear-gradient(135deg, rgba(45,212,167,0.08), rgba(45,212,167,0.02));
+    border: 1px solid rgba(45,212,167,0.25);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 4px;
+    font-size: 13.5px;
+    line-height:1.6;
+    color: #cfe9df;
+  }
+  .insight-box b{color: var(--teal);}
+  footer{
+    margin-top: 28px;
+    text-align:center;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--muted);
+  }
+  @media (max-width: 900px){
+    .kpi-row{grid-template-columns: 1fr 1fr;}
+    .grid, .grid3{grid-template-columns: 1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <p class="eyebrow">Financial Analytics · Internal Dashboard</p>
+    <h1>Financial Analytics Dashboard</h1>
+    <p class="subtitle">Revenue, expense, profitability & budget tracking across 6 departments</p>
+  </div>
+  <div class="period">
+    24-Month Period<br>
+    <span id="periodRange"></span>
+  </div>
+</header>
+
+<div class="kpi-row">
+  <div class="kpi" style="--accent: var(--teal)">
+    <div class="kpi-label">Total Revenue</div>
+    <div class="kpi-value" id="kpiRevenue">—</div>
+    <div class="kpi-sub">Across all departments</div>
+  </div>
+  <div class="kpi" style="--accent: var(--coral)">
+    <div class="kpi-label">Total Expense</div>
+    <div class="kpi-value" id="kpiExpense">—</div>
+    <div class="kpi-sub">All cost centers</div>
+  </div>
+  <div class="kpi" style="--accent: var(--gold)">
+    <div class="kpi-label">Net Profit</div>
+    <div class="kpi-value" id="kpiProfit">—</div>
+    <div class="kpi-sub" id="kpiProfitSub">Cumulative over period</div>
+  </div>
+  <div class="kpi" style="--accent: var(--blue)">
+    <div class="kpi-label">Avg Profit Margin</div>
+    <div class="kpi-value" id="kpiMargin">—</div>
+    <div class="kpi-sub">Monthly average</div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="panel">
+    <h2>Revenue vs Expense vs Net Profit — <span>Monthly Trend</span></h2>
+    <canvas id="trendChart"></canvas>
+  </div>
+  <div class="panel">
+    <h2>Profit Margin % — <span>Over Time</span></h2>
+    <canvas id="marginChart"></canvas>
+  </div>
+</div>
+
+<div class="grid3">
+  <div class="panel">
+    <h2>Expense Breakdown — <span>By Category</span></h2>
+    <canvas id="expenseCatChart"></canvas>
+  </div>
+  <div class="panel">
+    <h2>Revenue — <span>By Department</span></h2>
+    <canvas id="deptRevChart"></canvas>
+  </div>
+  <div class="panel">
+    <h2>Budget vs Actual — <span id="latestMonthLabel"></span></h2>
+    <canvas id="budgetChart"></canvas>
+  </div>
+</div>
+
+<div class="panel">
+  <h2>Cumulative Cash Flow</h2>
+  <canvas id="cashFlowChart" style="max-height:220px;"></canvas>
+</div>
+
+<div class="insight-box" id="insightBox"></div>
+
+<footer>Data: synthetic financial dataset · Built with Python (Pandas/SQLite) → Chart.js · Jayasurya N</footer>
+
+<script>
+const data = {"months": ["2024-01", "2024-02", "2024-03", "2024-04", "2024-05", "2024-06", "2024-07", "2024-08", "2024-09", "2024-10", "2024-11", "2024-12", "2025-01", "2025-02", "2025-03", "2025-04", "2025-05", "2025-06", "2025-07", "2025-08", "2025-09", "2025-10", "2025-11", "2025-12"], "revenue": [272434.0, 264764.0, 294250.0, 289994.0, 274211.0, 306420.0, 304677.0, 279408.0, 302865.0, 293176.0, 306875.0, 306762.0, 291802.0, 297988.0, 322761.0, 327591.0, 298318.0, 321685.0, 343137.0, 342832.0, 309318.0, 344447.0, 302459.0, 366912.0], "expense": [234930.0, 235347.0, 233908.0, 240239.0, 237005.0, 242697.0, 261600.0, 244639.0, 252309.0, 256430.0, 258869.0, 263249.0, 249394.0, 253181.0, 257126.0, 289832.0, 285110.0, 288864.0, 298382.0, 297219.0, 281381.0, 293792.0, 275971.0, 306254.0], "net_profit": [37505.0, 29417.0, 60342.0, 49756.0, 37206.0, 63723.0, 43077.0, 34769.0, 50555.0, 36746.0, 48006.0, 43513.0, 42408.0, 44806.0, 65635.0, 37759.0, 13208.0, 32821.0, 44754.0, 45613.0, 27937.0, 50655.0, 26488.0, 60658.0], "margin_pct": [13.8, 11.1, 20.5, 17.2, 13.6, 20.8, 14.1, 12.4, 16.7, 12.5, 15.6, 14.2, 14.5, 15.0, 20.3, 11.5, 4.4, 10.2, 13.0, 13.3, 9.0, 14.7, 8.8, 16.5], "cash_flow": [37505.0, 66922.0, 127264.0, 177019.0, 214225.0, 277948.0, 321025.0, 355794.0, 406349.0, 443095.0, 491100.0, 534613.0, 577021.0, 621828.0, 687463.0, 725221.0, 738430.0, 771250.0, 816005.0, 861618.0, 889554.0, 940210.0, 966698.0, 1027356.0], "expense_categories": ["Logistics", "Software & Tools", "Marketing Spend", "Travel", "Salaries", "Raw Materials", "Utilities", "Office Rent"], "expense_values": [960769.0, 956946.0, 943426.0, 916480.0, 695190.0, 646264.0, 644282.0, 574373.0], "dept_names": ["Sales", "Operations", "Marketing", "IT", "R&D"], "dept_revenue": [4833451.0, 1641782.0, 536268.0, 218589.0, 134995.0], "budget_depts": ["HR", "IT", "Marketing", "Operations", "R&D", "Sales"], "budget_actual": [28360.0, 37917.0, 44993.0, 80098.0, 49887.0, 64998.0], "budget_budgeted": [27060.0, 31980.0, 36900.0, 79950.0, 43050.0, 67650.0], "latest_month": "2025-12", "total_revenue": 7365086, "total_expense": 6337730, "net_total": 1027356, "avg_margin": 13.9};
+
+function fmtCurrency(n){
+  const abs = Math.abs(n);
+  if(abs >= 10000000) return (n/10000000).toFixed(2) + " Cr";
+  if(abs >= 100000) return (n/100000).toFixed(2) + " L";
+  return "₹" + n.toLocaleString('en-IN');
+}
+function fmtCurrencyFull(n){
+  return "₹" + Math.round(n).toLocaleString('en-IN');
+}
+
+document.getElementById('periodRange').textContent = data.months[0] + " → " + data.months[data.months.length-1];
+document.getElementById('kpiRevenue').textContent = fmtCurrencyFull(data.total_revenue);
+document.getElementById('kpiExpense').textContent = fmtCurrencyFull(data.total_expense);
+document.getElementById('kpiProfit').textContent = fmtCurrencyFull(data.net_total);
+document.getElementById('kpiProfit').className = "kpi-value " + (data.net_total >= 0 ? "up" : "down");
+document.getElementById('kpiMargin').textContent = data.avg_margin + "%";
+document.getElementById('latestMonthLabel').textContent = data.latest_month;
+
+const overBudget = data.budget_depts.filter((d,i)=> data.budget_actual[i] > data.budget_budgeted[i]);
+const topCat = data.expense_categories[0];
+const topCatPct = ((data.expense_values[0] / data.total_expense) * 100).toFixed(1);
+const firstRev = data.revenue[0], lastRev = data.revenue[data.revenue.length-1];
+const growth = (((lastRev - firstRev)/firstRev) * 100).toFixed(1);
+
+document.getElementById('insightBox').innerHTML =
+  `<b>Key Insight:</b> Revenue grew <b>${growth}%</b> from ${data.months[0]} to ${data.months[data.months.length-1]}, ` +
+  `sustaining an average profit margin of <b>${data.avg_margin}%</b>. ` +
+  `<b>${topCat}</b> is the largest expense category at <b>${topCatPct}%</b> of total spend. ` +
+  (overBudget.length ? `In ${data.latest_month}, <b>${overBudget.join(", ")}</b> exceeded their budgeted expense — a priority area for cost review.`
+                      : `All departments stayed within budget in ${data.latest_month}.`);
+
+Chart.defaults.color = "#7c8fa0";
+Chart.defaults.borderColor = "#1f2b35";
+Chart.defaults.font.family = "'Inter', sans-serif";
+
+new Chart(document.getElementById('trendChart'), {
+  type: 'line',
+  data: {
+    labels: data.months,
+    datasets: [
+      {label:'Revenue', data:data.revenue, borderColor:'#4f9dde', backgroundColor:'#4f9dde22', tension:0.3, fill:false},
+      {label:'Expense', data:data.expense, borderColor:'#ff6b5e', backgroundColor:'#ff6b5e22', tension:0.3, fill:false},
+      {label:'Net Profit', data:data.net_profit, borderColor:'#2dd4a7', backgroundColor:'#2dd4a733', tension:0.3, fill:true, borderDash:[4,3]},
+    ]
+  },
+  options: {responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'top', labels:{boxWidth:10}}}}
+});
+
+new Chart(document.getElementById('marginChart'), {
+  type: 'line',
+  data: {
+    labels: data.months,
+    datasets: [{label:'Profit Margin %', data:data.margin_pct, borderColor:'#e0b04c', backgroundColor:'#e0b04c22', tension:0.3, fill:true}]
+  },
+  options: {responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}
+});
+
+new Chart(document.getElementById('expenseCatChart'), {
+  type: 'bar',
+  data: {
+    labels: data.expense_categories,
+    datasets: [{label:'Spend', data:data.expense_values, backgroundColor:'#ff6b5eaa', borderRadius:4}]
+  },
+  options: {indexAxis:'y', responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}
+});
+
+new Chart(document.getElementById('deptRevChart'), {
+  type: 'doughnut',
+  data: {
+    labels: data.dept_names,
+    datasets: [{data:data.dept_revenue, backgroundColor:['#2dd4a7','#4f9dde','#e0b04c','#ff6b5e','#9d7ee8','#5fd0d6']}]
+  },
+  options: {responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'bottom', labels:{boxWidth:10, font:{size:10}}}}}
+});
+
+new Chart(document.getElementById('budgetChart'), {
+  type: 'bar',
+  data: {
+    labels: data.budget_depts,
+    datasets: [
+      {label:'Actual', data:data.budget_actual, backgroundColor:'#ff6b5eaa', borderRadius:4},
+      {label:'Budgeted', data:data.budget_budgeted, backgroundColor:'#4f9deeaa', borderRadius:4}
+    ]
+  },
+  options: {responsive:true, maintainAspectRatio:false, plugins:{legend:{position:'top', labels:{boxWidth:10}}}}
+});
+
+new Chart(document.getElementById('cashFlowChart'), {
+  type: 'line',
+  data: {
+    labels: data.months,
+    datasets: [{label:'Cumulative Cash Flow', data:data.cash_flow, borderColor:'#2dd4a7', backgroundColor:'#2dd4a733', fill:true, tension:0.3}]
+  },
+  options: {responsive:true, maintainAspectRatio:false, plugins:{legend:{display:false}}}
+});
+</script>
+
+</body>
+</html>
