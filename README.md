@@ -95,7 +95,7 @@ python3 notebooks/eda_analysis.py                 # or: regenerate the chart ima
 - Cumulative cash flow
 - Department filter and click-to-filter
 
-**Live dashboard:** [](https://public.tableau.com/app/profile/jayasurya.n7397/viz/FinancialAnalyticsDashboard_17930085857110/FinancialAnalyticsDashboard)
+**Live dashboard:** [View on Tableau Public](https://public.tableau.com/app/profile/jayasurya.n7397/viz/FinancialAnalyticsDashboard_17930085857110/FinancialAnalyticsDashboard)
 
 ![Dashboard overview](screenshots/dashboard_overview.png)
 
